@@ -13,10 +13,17 @@ function pageLoad() {
   // }
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
   
+  let profile = {
+    name: {first: 'Brian', last: 'Eng'},
+    location: {city: 'Chicago', state: 'IL'},
+    status: 'Teaching KIEI-451!'
+  }
+
+  let output = `${profile.location.city}, ${profile.location.state}`
+
   // template literals support HTML too!
-  output = `
-    <div class="text-4xl">Sweet</div>
-  `
+  output = `${profile.location.city}, ${profile.location.state}`
+  
   /*
     this code does the work of writing the output to screen...
     so leave it alone :) this code expects a variable named

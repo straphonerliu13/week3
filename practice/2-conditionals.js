@@ -10,6 +10,14 @@ function pageLoad() {
   let die2 = getRandomInt(6)
   let total = die1 + die2
   let output
+  
+  if (total == 7 || total == 11) {
+    output = 'You win!'
+  } else if (total == 2 || total == 3 || total == 12) {
+    output = 'You lose!'
+  } else {
+    output = `the point is ${total}`  
+  }
 
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
   
